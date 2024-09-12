@@ -24,6 +24,7 @@ body{
     };
 
     p{
+        --angle: 0deg;
         padding: 30px 10px;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -33,7 +34,10 @@ body{
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         color: white;
-        opacity: 0.8;
+        /* color: rgba(255, 255, 255, 0);
+        background-image: conic-gradient(from var(--angle),#008080, rgb(255, 81, 0), rgb(0, 140, 255));
+        background-clip: text;
+        animation: spin 3s infinite linear; */
     }
 }
 
@@ -60,7 +64,7 @@ body{
 
 .card::before{
     filter: blur(20px);
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 @keyframes spin{
